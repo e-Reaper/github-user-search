@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		GITHUB USER SEARCH | SEARCH ANY USER ON GITHUB WITH THE PUBLIC PROFILE 
+	</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<script src="basic.js"></script>
+	<script src="https://use.fontawesome.com/b17c142e25.js"></script>
+</head>
+<body>
+	<hr id="loader" class="progress-bar">
+	<div class="wrapper">
+		<div class="header">
+			<input type="text" name="login-input" id="login-input" placeholder="github login">
+			<input type="button" name="login-submit" id="login-submit" value="Add" onclick="getUser()">
+			<div class="error-container" id="error-container" onclick="hideError()">
+				dasdsd
+			</div>
+			<br style="clear:both;">
+		</div>
+		<div class="content-wrapper">
+			<div class="filter">
+				<span>
+					Sort by :					
+				</span>
+				<ul class="filter-option" id="filter-option">
+					<li onclick="sort('name')" class="unSorted" id="sort-name">
+						<a href="javascript:void(0)">Name <i class="fa fa-sort-down"></i></a>
+					</li>
+					<li onclick="sort('location')" class="unSorted" id="sort-location">
+						<a href="javascript:void(0)">Location <i class="fa fa-sort-down"></i></a>
+					</li>
+					<li onclick="sort('follower')" class="unSorted"  id="sort-follower">
+						<a href="javascript:void(0)">Followers <i class="fa fa-sort-down"></i></a>
+					</li>
+				</ul>
+			</div>
+			<ul class="content" id="users">
+				
+			</ul>
+		</div>
+	</div>
+	<template id="template">
+		<li class="user-card" >
+			<div class="remove-user">
+					<i class="fa fa-close"></i>
+			</div>
+			<a class="html_link" href="javascript:void(0)">
+				<div>
+					<div class="avatar">
+						<img src="">
+					</div>
+					<div class="about">
+						<div class="name">
+							<span class="value"></span>
+						</div>
+						<div class="location">
+							Location : <span class="value"></span>							
+						</div>
+						<div class="followers">
+							<span>Followers : </span><span class="value"></span>
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+	</template>
+</body>
+</html>
