@@ -1,8 +1,9 @@
 body{
 	
     min-height: 100vh;
+    /*background-color: aliceblue;*/
     background-attachment: fixed;
-    background: url('./back.png');
+    background: url('http://digifutura.com/img/img.png');
     background-size: 100% 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -145,6 +146,7 @@ body{
 
 }
 .content>.user-card>a{
+	background-color: white;
 	text-decoration: none;
 	color: black;
 	font-weight: 600;
