@@ -2,7 +2,7 @@ body{
 	
     min-height: 100vh;
     background-attachment: fixed;
-    background: url('http://digifutura.com/img/img.png');
+    background: url('./back.png');
     background-size: 100% 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
