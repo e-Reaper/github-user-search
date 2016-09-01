@@ -146,13 +146,13 @@ body{
 
 }
 .content>.user-card>a{
-	background-color: white;
 	text-decoration: none;
 	color: black;
 	font-weight: 600;
 	font-size: 1.1em;
 }
 .user-card{
+	background: white;
 	position: relative;
 	transition: all ease 0.4s;
 	box-shadow: 2px 2px 5px #eee,-2px -2px 5px #eee;
